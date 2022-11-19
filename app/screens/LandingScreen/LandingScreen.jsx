@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { View, StyleSheet, Image } from "react-native";
+import normalize from "react-native-normalize";
 
 import AppText from "../../components/AppText";
 import Screen from "../../components/containers/Screen";
-import AppModal from "../../components/containers/AppModal";
 
 import Header from "./Header";
 import Slogan from "./Slogan";
@@ -75,7 +75,7 @@ export default LandingScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    padding: normalize(20),
   },
   downloadImagesContainer: {
     flexDirection: "row",
@@ -85,8 +85,8 @@ const styles = StyleSheet.create({
   },
   downloadImage: {
     width: "40%",
-    height: 38.8,
-    borderRadius: 5,
+    height: normalize(38.8),
+    borderRadius: normalize(5),
     backgroundColor: colors.lightGray,
   },
   section: {
@@ -108,11 +108,11 @@ const ComingSoon = () => {
     >
       <View
         style={{
-          width: 17.7,
+          width: normalize(17.7),
           height: 0,
           borderWidth: 1.26,
           borderColor: "#000",
-          marginRight: 6,
+          marginRight: normalize(6),
         }}
       />
       <AppText style={{ fontFamily: "Inter-Medium" }}>Coming Soon</AppText>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { View, TextInput, StyleSheet } from "react-native";
+import normalize from "react-native-normalize";
 
 import AppButton from "../../components/AppButton";
 import colors from "../../config/colors";
@@ -63,8 +64,8 @@ const styles = StyleSheet.create({
   },
   textInput: {
     flex: 1,
-    marginHorizontal: 5,
-    marginLeft: 10,
+    marginHorizontal: normalize(5),
+    marginLeft: normalize(10),
     fontFamily: "Inter-SemiBold",
   },
   textValidation: {

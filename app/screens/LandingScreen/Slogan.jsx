@@ -1,4 +1,5 @@
 import React from "react";
+import { RFValue } from "react-native-responsive-fontsize";
 import { StyleSheet } from "react-native";
 
 import AppText from "../../components/AppText";

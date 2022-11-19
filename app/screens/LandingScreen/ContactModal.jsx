@@ -5,6 +5,7 @@ import {
   StyleSheet,
   TouchableWithoutFeedback,
 } from "react-native";
+import normalize from "react-native-normalize";
 
 import AppModal from "../../components/containers/AppModal";
 import AppText from "../../components/AppText";
@@ -68,7 +69,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 17,
     color: colors.Blue,
-    marginRight: 16,
+    marginRight: normalize(16),
   },
   copyImage: {
     width: 14,

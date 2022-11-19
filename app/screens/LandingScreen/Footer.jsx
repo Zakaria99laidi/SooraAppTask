@@ -5,8 +5,9 @@ import {
   TouchableWithoutFeedback,
   Linking,
 } from "react-native";
-import AppText from "../../components/AppText";
+import normalize from "react-native-normalize";
 
+import AppText from "../../components/AppText";
 import Icon from "../../components/Icon";
 
 const SocialIcons = [
@@ -69,11 +70,11 @@ const styles = StyleSheet.create({
   socialIconsContainer: {
     flexDirection: "row",
     paddingBottom: 16,
-    paddingHorizontal: 20,
+    paddingHorizontal: normalize(20),
     justifyContent: "center",
   },
   icon: {
-    marginRight: 16,
+    marginRight: normalize(16),
   },
 });
 
