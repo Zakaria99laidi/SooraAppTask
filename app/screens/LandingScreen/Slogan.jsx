@@ -9,13 +9,11 @@ const Slogan = ({ text, style }) => {
 
 const styles = StyleSheet.create({
   slogan: {
-    // fontFamily: "Inter",
-    fontWeight: "800",
+    fontFamily: "Inter-Bold",
     fontSize: 36,
     lineHeight: 44,
     textAlign: "center",
     textTransform: "capitalize",
-    // marginBottom: 24,
   },
 });
 

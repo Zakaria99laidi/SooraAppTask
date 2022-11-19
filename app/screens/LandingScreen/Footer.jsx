@@ -44,7 +44,7 @@ const Footer = () => {
         {SocialIcons.map((social) => (
           <TouchableWithoutFeedback
             key={social.name}
-            onPress={() => Linking.openURL(social.link ?? "http://google.com")}
+            onPress={() => Linking.openURL(social.link)}
           >
             <Icon imgSource={social.image} style={styles.icon} />
           </TouchableWithoutFeedback>

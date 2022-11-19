@@ -65,11 +65,10 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 5,
     marginLeft: 10,
-    fontSize: 15,
-    fontWeight: "700",
+    fontFamily: "Inter-SemiBold",
   },
   textValidation: {
-    fontWeight: "600",
+    fontFamily: "Inter-SemiBold",
     color: colors.Blue,
     marginBottom: 4,
   },

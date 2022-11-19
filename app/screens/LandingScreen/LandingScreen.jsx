@@ -19,12 +19,13 @@ const downloadImages = [
 ];
 
 export default LandingScreen = () => {
-  const [modalVisible, setModalVisible] = useState(true);
+  const [modalVisible, setModalVisible] = useState(false);
 
   return (
     <>
       <Screen>
         <View style={styles.container}>
+          {/* ------------------------------------  Header  ---------------------------------*/}
           <Header
             style={styles.section}
             handlePress={() => setModalVisible(true)}
@@ -33,7 +34,7 @@ export default LandingScreen = () => {
           {/* ------------------------------------  Welcome Section    ---------------------------------*/}
           <View style={styles.section}>
             <ComingSoon />
-            <Slogan text={`Bringing\n Muslims together`} />
+            <Slogan text={`Bringing \nMuslims together`} />
             <View style={styles.downloadImagesContainer}>
               {downloadImages.map((image) => (
                 <Image
@@ -86,15 +87,10 @@ const styles = StyleSheet.create({
     width: "40%",
     height: 38.8,
     borderRadius: 5,
-    backgroundColor: "#D9D9D980",
+    backgroundColor: colors.lightGray,
   },
   section: {
     marginBottom: 60,
-  },
-
-  debuger: {
-    borderWidth: 1,
-    borderColor: "#000",
   },
 });
 
@@ -102,7 +98,6 @@ const ComingSoon = () => {
   return (
     <View
       style={[
-        // styles.debuger,
         {
           flexDirection: "row",
           alignItems: "center",
@@ -120,7 +115,7 @@ const ComingSoon = () => {
           marginRight: 6,
         }}
       />
-      <AppText style={{ fontWeight: "500" }}>Coming Soon</AppText>
+      <AppText style={{ fontFamily: "Inter-Medium" }}>Coming Soon</AppText>
     </View>
   );
 };

@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     height: 16,
   },
   textButton: {
-    fontWeight: "700",
+    fontFamily: "Inter-SemiBold",
     fontSize: 10,
     lineHeight: 12,
   },

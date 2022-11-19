@@ -63,7 +63,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   email: {
-    fontWeight: "600",
+    // fontWeight: "600",
+    fontFamily: "Inter-SemiBold",
     fontSize: 14,
     lineHeight: 17,
     color: colors.Blue,
